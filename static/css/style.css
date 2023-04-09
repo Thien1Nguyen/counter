@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+body{
+    background-color: black;
+    
+}
+
+.counterBanner{
+    color: white;
+    font-size: 26pt;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 20px;
+}
+.counter{
+    color: white;
+    font-size: 20pt;
+    width: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+.btnContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    width: auto;
+    height: auto;
+}
+.btn{
+    background-color: navy;
+    color: white;   
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.bgnavy{
+    background-color: navy;
+}
+.bgmaroon{
+    background-color: maroon;
+}
+.btncorn{
+    background-color: cornflowerblue;
+    cursor: pointer;
+    font-size: 14pt;
+}
+
+.form{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+.inputBox{
+    width: 180px;
+    font-size: 20pt;
+}
+
+button:hover{
+    background-color: rebeccapurple;
+}
+a:hover{
+    background-color: rebeccapurple;
+}

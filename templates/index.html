@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename = 'css/style.css' )}}">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap'); </style>
+    <title>Document</title>
+</head>
+<body>
+    <div class="counterBanner">Counter</div>
+
+    <div>
+        <p class="counter"> Visit Count: {{session['visit']}} </p>
+        <p class="counter"> Click Count: {{session['count']}}</p>
+
+        <div class="btnContainer">
+            <a href="/add_count" class="btn bgnavy">+2 Baby</a>
+            <a href="/destroy_session" class="btn bgmaroon">Reset</a>
+            <form method="POST" action="/input_count" class="form">
+                <label for="input_count"> Number of clicks!: </label>
+                <input name="input_count" type="text" placeholder="# of Clicks" class="inputBox">
+                <button class="btn btncorn">Hit!</button>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
